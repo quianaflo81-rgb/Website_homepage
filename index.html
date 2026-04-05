@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiana Anderson | Portfolio</title>
   <style>
-    /* ... [Keeping your established styles] ... */
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: #ffffff; color: #3d3d3a; line-height: 1.6; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: #ffffff; color: #3d3d3a; line-height: 1.6; padding: 2rem; display: flex; justify-content: center; }
     :root { --cal-gold: #FDB515; --cal-navy: #003262; }
     .container { max-width: 800px; width: 100%; }
     .header { text-align: center; margin-bottom: 3rem; }
@@ -15,15 +14,16 @@
     .name { font-size: 42px; font-weight: 500; color: var(--cal-navy); margin-bottom: 1rem; }
     .tagline { font-size: 20px; color: #4a4a46; margin: 0 auto 2rem auto; max-width: 650px; }
     .contact-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
-    .contact-link { color: var(--cal-navy); text-decoration: none; font-size: 15px; font-weight: 500; }
+    .contact-link { color: var(--cal-navy); text-decoration: none; font-size: 15px; font-weight: 500; transition: 0.3s; }
     .contact-link:hover { color: var(--cal-gold); }
     .divider { height: 2px; background: linear-gradient(to right, transparent, var(--cal-gold), transparent); margin: 3rem 0; }
     .section-title { font-size: 24px; font-weight: 500; color: var(--cal-navy); margin-bottom: 2rem; text-align: center; }
     .projects-grid { display: grid; gap: 2rem; }
-    .project-card { background: #ffffff; border: 2px solid rgba(61, 61, 58, 0.1); border-radius: 16px; padding: 2rem; transition: all 0.3s; text-decoration: none; color: inherit; display: block; }
+    .project-card { background: #ffffff; border: 2px solid rgba(61, 61, 58, 0.1); border-radius: 16px; padding: 2rem; transition: all 0.3s; text-decoration: none; color: inherit; display: block; position: relative; }
     .project-card:hover { border-color: var(--cal-gold); transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); }
     .project-title { font-size: 22px; font-weight: 500; color: var(--cal-navy); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px; }
-    .project-title::after { content: '→'; color: var(--cal-gold); }
+    .project-title::after { content: '→'; color: var(--cal-gold); transition: 0.3s; }
+    .project-card:hover .project-title::after { transform: translateX(5px); }
     .project-description { font-size: 16px; color: #73726c; line-height: 1.7; margin-bottom: 1rem; }
     .project-url { font-size: 13px; color: var(--cal-gold); font-family: monospace; font-weight: bold; }
     .badge { display: inline-block; padding: 4px 12px; background: var(--cal-navy); color: white; border-radius: 20px; font-size: 11px; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 1px; }
@@ -46,13 +46,13 @@
     <h2 class="section-title">Leadership & Research</h2>
     <div class="projects-grid">
       
-      <a href="https://www.linkedin.com/in/quiana-anderson-14598998" target="_blank" class="project-card" style="border-left: 6px solid var(--cal-navy);">
+      <a href="https://policy.quianacan.dev/essay.html" target="_blank" rel="noopener noreferrer" class="project-card" style="border-left: 6px solid var(--cal-navy);">
         <span class="badge">Policy Analysis</span>
         <h3 class="project-title">African American Incarceration Post Civil War</h3>
         <p class="project-description">
           A "State of the Field" analysis exploring how post-emancipation criminal codes and vagrancy laws created the early architecture of the American carceral state.
         </p>
-        <span class="project-url">Read via LinkedIn</span>
+        <span class="project-url">policy.quianacan.dev</span>
       </a>
 
       <a href="https://www.csueastbay.edu/history/files/docs/east-bay-historia-2025.pdf" target="_blank" class="project-card" style="border-left: 6px solid var(--cal-gold);">
@@ -63,7 +63,6 @@
         </p>
         <span class="project-url">View Journal (PDF)</span>
       </a>
-
     </div>
 
     <div class="divider"></div>
