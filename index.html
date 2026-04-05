@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiana | Community-First Data Analyst</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background: #ffffff; color: #3d3d3a; line-height: 1.6; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+    :root { --cal-gold: #FDB515; --cal-navy: #003262; }
+    .container { max-width: 800px; width: 100%; }
+    .header { text-align: center; margin-bottom: 3rem; }
+    .profile-pic { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 4px solid var(--cal-gold); margin-bottom: 1.5rem; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+    .name { font-size: 42px; font-weight: 500; color: var(--cal-navy); margin-bottom: 1rem; }
+    .tagline { font-size: 20px; color: #4a4a46; margin: 0 auto 2rem auto; max-width: 650px; }
+    .contact-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; }
+    .contact-link { color: var(--cal-navy); text-decoration: none; font-size: 15px; font-weight: 500; }
+    .contact-link:hover { color: var(--cal-gold); }
+    .divider { height: 2px; background: linear-gradient(to right, transparent, var(--cal-gold), transparent); margin: 3rem 0; }
+    .section-title { font-size: 24px; font-weight: 500; color: var(--cal-navy); margin-bottom: 2rem; text-align: center; }
+    .projects-grid { display: grid; gap: 2rem; }
+    .project-card { background: #ffffff; border: 2px solid rgba(61, 61, 58, 0.1); border-radius: 16px; padding: 2rem; transition: all 0.3s; text-decoration: none; color: inherit; display: block; }
+    .project-card:hover { border-color: var(--cal-gold); transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); }
+    .project-title { font-size: 22px; font-weight: 500; color: var(--cal-navy); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px; }
+    .project-title::after { content: '→'; color: var(--cal-gold); }
+    .project-description { font-size: 16px; color: #73726c; line-height: 1.7; margin-bottom: 1rem; }
+    .project-url { font-size: 13px; color: var(--cal-gold); font-family: monospace; font-weight: bold; }
+    .badge { display: inline-block; padding: 4px 12px; background: var(--cal-navy); color: white; border-radius: 20px; font-size: 11px; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 1px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="IMG_0448.jpeg" alt="Quiana Anderson" class="profile-pic">
+      <h1 class="name">Quiana Anderson</h1>
+      <p class="tagline">Data analyst who puts community first and believes that when everyone has everything they need we are all the safest.</p>
+      <div class="contact-links">
+        <a href="mailto:QuianaMACSS@icloud.com" class="contact-link">Email</a>
+        <a href="https://www.linkedin.com/in/quiana-anderson-14598998" target="_blank" class="contact-link">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2 class="section-title">Leadership & Research</h2>
+    <div class="projects-grid">
+      
+      <a href="essay.html" class="project-card" style="border-left: 6px solid var(--cal-navy);">
+        <span class="badge">Policy Analysis</span>
+        <h3 class="project-title">African American Incarceration Post Civil War</h3>
+        <p class="project-description">
+          A "State of the Field" analysis exploring how post-emancipation criminal codes and vagrancy laws created the early architecture of the American carceral state.
+        </p>
+        <span class="project-url">Read Interactive Essay</span>
+      </a>
+
+      <a href="https://www.csueastbay.edu/history/files/docs/east-bay-historia-2025.pdf" target="_blank" class="project-card" style="border-left: 6px solid var(--cal-gold);">
+        <span class="badge">Leadership</span>
+        <h3 class="project-title">Editor-in-Chief | East Bay Historia</h3>
+        <p class="project-description">
+          Led editorial operations for Volume 9, overseeing the full review and publication workflow while mentoring student authors in evidence-based research.
+        </p>
+        <span class="project-url">View Journal (PDF)</span>
+      </a>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <h2 class="section-title">Data Analytics Projects</h2>
+    <div class="projects-grid">
+      <a href="https://warondrugs.quianacan.dev" target="_blank" class="project-card">
+        <h3 class="project-title">War on Drugs: A Historical Analysis</h3>
+        <p class="project-description">Tracing the evolution of carceral policy from the 13th Amendment to modern mass incarceration.</p>
+        <span class="project-url">warondrugs.quianacan.dev</span>
+      </a>
+
+      <a href="https://ethics.quianacan.dev" target="_blank" class="project-card">
+        <h3 class="project-title">Criminal Justice Data Ethics Analyzer</h3>
+        <p class="project-description">Interactive tool for analyzing ethical challenges and algorithmic harm in criminal justice data.</p>
+        <span class="project-url">ethics.quianacan.dev</span>
+      </a>
+
+      <a href="https://data.quianacan.dev" target="_blank" class="project-card">
+        <h3 class="project-title">SNAP Program Data Analytics</h3>
+        <p class="project-description">Data-driven analysis of SNAP accessibility and food security policy impacts.</p>
+        <span class="project-url">data.quianacan.dev</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
